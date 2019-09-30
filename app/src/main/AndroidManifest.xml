@@ -5,16 +5,27 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".product_details_activity.ProductOfProductsActivity"></activity>
+        <activity android:name=".product_details_activity.ProductDetailsActivity" />
         <activity
-            android:name=".HomeActivity"
-            android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".products_activity.ProductsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".cart_activity.CartActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".beauticians_activity.BeauticiansActivity" />
+        <activity android:name=".Offers.OffersActivity" />
+        <activity
+            android:name=".services_activity.ServicesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".home_activity.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".main_activity.MainActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
