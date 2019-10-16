@@ -6,7 +6,7 @@
     <data>
         <variable
             name="activity"
-            type="com.example.thespa.home_activity.HomeActivity" />
+            type="com.example.thespa.home.HomeActivity" />
     </data>
 
     <android.support.v4.widget.DrawerLayout
@@ -22,8 +22,8 @@
 
             <android.support.design.widget.CoordinatorLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:context=".home_activity.HomeActivity">
+                android:layout_height="wrap_content"
+                tools:context=".home.HomeActivity">
 
                 <android.support.design.widget.AppBarLayout
                     android:layout_width="match_parent"
@@ -36,10 +36,10 @@
                         android:layout_height="?attr/actionBarSize"
                         android:background="?attr/colorPrimary"
                          >
-                        <TextView
+                        <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="The spa"
+                            android:src="@drawable/app_name"
                             android:layout_gravity="center"
                             android:textColor="@color/White"
                             android:textSize="@dimen/dimen_text_17"/>
@@ -75,7 +75,6 @@
                     android:paddingRight="@dimen/card_padding"
                     android:paddingBottom="30dp"
                     android:translationZ="4dp"
-
                     />
 
                 <TextView
@@ -123,13 +122,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:src="@drawable/relax" />
+                            android:src="@drawable/relax"
+                            android:contentDescription="relax" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="Face &amp; Skin" />
+                            android:text="@string/face_amp_skin" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -177,7 +177,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="Face &amp; Skin" />
+                            android:text="@string/face_amp_skin" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -201,7 +201,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="Face &amp; Skin" />
+                            android:text="@string/face_amp_skin" />
                     </LinearLayout>
                 </GridLayout>
 
@@ -241,9 +241,7 @@
                         android:layout_columnWeight="1"
                         android:layout_margin="10dp"
                         android:elevation="3dp"
-
                         android:src="@drawable/product_1"
-
                         />
 
                     <ImageView
@@ -279,14 +277,10 @@
                         android:layout_columnWeight="1"
                         android:layout_margin="10dp"
                         android:elevation="3dp"
-
                         android:orientation="vertical"
-
                         android:src="@drawable/product_1" />
 
-
                 </GridLayout>
-
             </android.support.design.widget.CoordinatorLayout>
         </ScrollView>
 

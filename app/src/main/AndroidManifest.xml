@@ -8,24 +8,82 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".product_details_activity.ProductOfProductsActivity"></activity>
-        <activity android:name=".product_details_activity.ProductDetailsActivity" />
+        <activity android:name=".bookAppointment.appointment_summary.AppointmentSummaryActivity"
+            android:theme="@style/AppTheme.NoActionBar" ></activity>
         <activity
-            android:name=".products_activity.ProductsActivity"
+            android:name=".offers.offers_details.OfferDetailsActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".cart_activity.CartActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".beauticians_activity.BeauticiansActivity" />
-        <activity android:name=".Offers.OffersActivity" />
-        <activity
-            android:name=".services_activity.ServicesActivity"
+            android:name=".contact_us.ContactUsActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".home_activity.HomeActivity"
+            android:name=".aboutus.AboutUsActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".main_activity.MainActivity"
+            android:name=".appointments.AppointmentsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verification.VerificationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bookAppointment.PaymentSuccess"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bookAppointment.CreditCardPayment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bookAppointment.payment.PaymentMethods"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bookAppointment.services.BookServicesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bookAppointment.specialities.BookSpecialities"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bookAppointment.schedule.ScheduleActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bookAppointment.BookAppointment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".beauticians.BeauticiansDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".favorite.FavoriteActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".massage.MassageActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".products.ProductOfProductsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".products.ProductDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".products.ProductsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".carts.CartActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".beauticians.BeauticiansActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".offers.OffersActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".services.ServicesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".splash.MainActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,5 +92,11 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission-sdk-23 android:name="android.permission.READ_CONTACTS" />
 
 </manifest>

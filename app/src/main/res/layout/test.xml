@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:background="@drawable/promotion_edittext_style"
+        android:layout_margin="@dimen/dimen_20"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+<TextView
+    android:id="@+id/subtotal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Subtotal"
+    android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/subtotal_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90.00 SR"
+            android:layout_margin="10dp"
+           android:layout_alignParentEnd="true"/>
+        <TextView
+            android:id="@+id/taxes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taxes &amp; Charges"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/subtotal"/>
+        <TextView
+            android:id="@+id/taxes_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.00 SR"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/subtotal_amount"/>
+        <TextView
+            android:id="@+id/delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Fee"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/taxes"/>
+        <TextView
+            android:id="@+id/delivery_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9.00 SR"
+            android:layout_margin="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/taxes_amount"/>
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/delivery"/>
+        <TextView
+            android:id="@+id/discount_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-16.00 SR"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/delivery_amount"
+            android:layout_alignParentEnd="true"/>
+<View
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_margin="10dp"
+    android:background="@color/colorPrimary"
+    android:layout_below="@+id/discount"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/view"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9.00 SR"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/view"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

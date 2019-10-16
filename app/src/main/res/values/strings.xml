@@ -32,5 +32,16 @@
     <string name="sign_up">Sign up</string>
     <string name="image">image</string>
     <string name="brushes">Brushes</string>
+    <string name="face_amp_skin"><![CDATA[Face & Skin]]></string>
+    <string name="details">Details</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="product_description">THE IDEAL REBOOT FOUNDATION TOOL MAKE UP FOR EVER makeup artists
+        have designed a new* brush to apply REBOOT ACTIVE CARE-IN-FOUNDATION: Buffing Foundation Brush #112.
+        WHY WE LOVE IT The fibers and the density of the new Buffing Foundation Brush #112 have been designed to
+        allow both smoothing and dabbing motions. Its shape slightly beveled shape is also designed to follow the various
+        contours of the face. During application, the bristles stay in place and produce a pleasant sensation on the skin,
+        while the short, wide handle of the brush allows for an optimal grip. This buffing brush works to enhance the REBOOT
+        application experience: BUILD UP YOUR COVERAGE: For more coverage on specific areas, add some foundation and buff it onto your skin.
+        * At MAKE UP FOR EVER</string>
 
 </resources>

@@ -45,7 +45,7 @@
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
-        tools:context=".services_activity.ServicesActivity">
+        tools:context=".services.ServicesActivity">
 
         <GridLayout
             android:layout_width="match_parent"
@@ -54,6 +54,7 @@
             android:rowCount="13">
 
             <LinearLayout
+                android:id="@+id/massage"
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_rowWeight="1"
