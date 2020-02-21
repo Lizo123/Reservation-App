@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="activity"
+            type="com.example.thespa.view.beauticians.BeauticiansDetails" />
+        <variable
+            name="model"
+            type="com.example.domain.entities.Beautician" />
+    </data>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -49,7 +58,7 @@
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".beauticians.BeauticiansDetails">
+            tools:context=".view.beauticians.BeauticiansDetails">
 
             <Button
                 android:id="@+id/send"
@@ -58,7 +67,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="8dp"
-                android:text="Send"
+                android:text="@string/send"
                 android:background="@drawable/button_style"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -71,13 +80,15 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
+                android:gravity="top"
+                android:padding="10dp"
                 android:background="@drawable/rounded_border_edittext"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
 
             <ImageView
-                android:id="@+id/imageView7"
+                android:id="@+id/image"
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 android:layout_marginStart="8dp"
@@ -101,38 +112,38 @@
                 app:layout_constraintTop_toBottomOf="@+id/editText" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Maya"
+                android:text="@{model.name}"
                 android:textSize="@dimen/dimen_28"
                 android:textColor="@color/colorPrimary"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+                app:layout_constraintTop_toBottomOf="@+id/image" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
-                android:text="Information"
-                android:textSize="@dimen/dimen_20"
+                android:layout_marginTop="16dp"
+                android:text="@string/information"
                 android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dimen_20"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                app:layout_constraintTop_toBottomOf="@+id/name" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Nike Dri-FIT is a polyester fabric designed to help you keep dry so you can more comfortably work harder, longer."
+                android:text="@{model.description}"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
@@ -141,21 +152,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="32dp"
-                android:text="Services Provided"
-                android:textSize="@dimen/dimen_20"
+                android:layout_marginTop="16dp"
+                android:text="@string/services_provided"
                 android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dimen_20"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                app:layout_constraintTop_toBottomOf="@+id/description" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/job_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Message, Body Care, Hair Style"
+                android:text="@{model.jobTitle}"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -164,25 +175,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
-                android:text="Reviews"
-                android:textSize="@dimen/dimen_20"
+                android:layout_marginTop="16dp"
+                android:text="@string/reviews"
                 android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dimen_20"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+                app:layout_constraintTop_toBottomOf="@+id/job_title" />
 
             <android.support.constraint.ConstraintLayout
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView13" >
+                app:layout_constraintTop_toBottomOf="@+id/textView13">
 
                 <ImageView
                     android:id="@+id/imageView10"
@@ -235,6 +246,7 @@
                     android:layout_marginStart="4dp"
                     android:layout_marginEnd="4dp"
                     android:text="Wonderful jean, perfect gift for my girl for our anniversary!"
+                    android:textSize="@dimen/dimen_15"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView10"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageView10"
@@ -245,3 +257,4 @@
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
+</layout>

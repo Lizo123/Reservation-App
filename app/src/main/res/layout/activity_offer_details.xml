@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".offers.offers_details.OfferDetailsActivity">
+    tools:context=".view.offers.offers_details.OfferDetailsActivity">
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
@@ -55,7 +55,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView50"
+                android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -73,29 +73,28 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:text="Details"
+                android:text="@string/details"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/dimen_20"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView50" />
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
 
             <TextView
-                android:id="@+id/textView53"
+                android:id="@+id/description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
-                android:text="Nike Dri-FIT is a polyester fabric
-                designed to help you keep dry so you can more
-                comfortably work harder, longer."
+                android:text="Nike Dri-FIT is a polyester fabric designed to help you keep dry so you can more comfortably work harder, longer."
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView51" />
-
 
             <TextView
                 android:id="@+id/textView54"
@@ -104,17 +103,17 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
-                android:text="Duration"
+                android:text="@string/duration"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/dimen_20"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView53" />
+                app:layout_constraintTop_toBottomOf="@+id/description" />
 
             <TextView
-                android:id="@+id/textView63"
+                android:id="@+id/duration"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -133,14 +132,14 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
-                android:text="Material Used"
+                android:text="@string/material_used"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/dimen_20"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView63" />
+                app:layout_constraintTop_toBottomOf="@+id/duration" />
 
             <TextView
                 android:id="@+id/textView56"
@@ -191,7 +190,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
-                android:text="Music"
+                android:text="@string/music"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/dimen_20"
                 android:textStyle="bold"
@@ -221,7 +220,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
-                android:text="Price"
+                android:text="@string/price"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/dimen_20"
                 android:textStyle="bold"
@@ -231,7 +230,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView60" />
 
             <TextView
-                android:id="@+id/textView62"
+                android:id="@+id/price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -250,14 +249,14 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
-                android:text="Related Offers"
+                android:text="@string/related_offers"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/dimen_20"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView62" />
+                app:layout_constraintTop_toBottomOf="@+id/price" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/offers_recycler"
@@ -278,7 +277,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:gravity="center"
-        android:text="Get Offer now"
+        android:text="@string/get_offer_now"
         android:textColor="@color/White"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

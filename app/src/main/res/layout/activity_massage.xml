@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".massage.MassageActivity">
+    tools:context=".view.massage.MassageActivity">
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/menu_cart"
+                android:text="Massage"
                 android:textColor="@color/White"
                 android:textSize="@dimen/dimen_text_17" />
             <ImageView

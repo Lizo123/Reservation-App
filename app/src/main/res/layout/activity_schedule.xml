@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".bookAppointment.schedule.ScheduleActivity">
+    tools:context=".view.bookAppointment.schedule.ScheduleActivity">
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Book Appointment"
+                android:text="@string/book_appointment"
                 android:textColor="@color/White"
                 />
         </android.support.v7.widget.Toolbar>
@@ -47,49 +47,69 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Choose Branch"
+        android:text="@string/choose_branch"
         android:textSize="@dimen/dimen_20"
         android:textColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
 
-
-    <TextView
-        android:id="@+id/textView21"
+<LinearLayout
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/rounded_border_edittext"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dimen_15"
+    android:paddingRight="@dimen/dimen_15"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView19">
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/arrow_down" />-->
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/rounded_border_edittext"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dimen_15"
+    android:paddingRight="@dimen/dimen_15"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/layout1">
+    <Spinner
+        android:id="@+id/spinner2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Riyadh"
-        android:drawableEnd="@drawable/arrow_down"
-        android:paddingLeft="@dimen/dimen_15"
-        android:paddingRight="@dimen/dimen_15"
         android:gravity="center_vertical"
-        android:background="@drawable/rounded_border_edittext"
+        android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
-
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Soliman King Street"
-        android:drawableRight="@drawable/arrow_down"
-        android:paddingLeft="@dimen/dimen_15"
-        android:paddingRight="@dimen/dimen_15"
-        android:gravity="center_vertical"
-        android:background="@drawable/rounded_border_edittext"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
-
+        app:layout_constraintTop_toBottomOf="@+id/layout1" />
+</LinearLayout>
     <TextView
         android:id="@+id/textView23"
         android:layout_width="match_parent"
@@ -97,12 +117,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
-        android:text="Date"
+        android:text="@string/date"
         android:textSize="@dimen/dimen_20"
         android:textColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+        app:layout_constraintTop_toBottomOf="@+id/layout2" />
 
     <TextView
         android:id="@+id/Date"
@@ -116,6 +136,7 @@
         android:paddingLeft="@dimen/dimen_15"
         android:paddingRight="@dimen/dimen_15"
         android:gravity="center_vertical"
+        android:textColor="#000000"
         android:background="@drawable/rounded_border_edittext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -128,7 +149,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
-        android:text="Available times"
+        android:text="@string/available_times"
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/dimen_20"
         app:layout_constraintEnd_toEndOf="parent"
@@ -156,12 +177,14 @@
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/radio1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
+                android:checked="false"
                 android:src="@drawable/beautician_photo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -186,12 +209,14 @@
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/radio2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
+                android:checked="false"
                 android:src="@drawable/beautician_photo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -203,7 +228,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:text="9:30 AM"
+                android:text="1:30 PM"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                />
@@ -215,12 +240,14 @@
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/radio3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
+                android:checked="false"
                 android:src="@drawable/beautician_photo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -232,7 +259,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:text="9:30 AM"
+                android:text="3:30 PM"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
               />
@@ -244,12 +271,14 @@
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/radio4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
+                android:checked="false"
                 android:src="@drawable/beautician_photo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -261,7 +290,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:text="9:30 AM"
+                android:text="6:30 PM"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                  />
@@ -273,7 +302,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:gravity="center"
-        android:text="Next"
+        android:text="@string/next"
         android:textColor="@color/White"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

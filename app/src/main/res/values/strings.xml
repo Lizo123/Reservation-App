@@ -25,11 +25,11 @@
     <string name="log_out">Log out?</string>
     <string name="Duumy_mobile">+201016017696</string>
     <string name="dummy_name">Zoha Haded</string>
-    <string name="services">Services</string>
-    <string name="products">Products</string>
+
     <string name="see_more">See more</string>
     <string name="add_more_services">Add more services</string>
     <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
     <string name="image">image</string>
     <string name="brushes">Brushes</string>
     <string name="face_amp_skin"><![CDATA[Face & Skin]]></string>
@@ -43,5 +43,117 @@
         while the short, wide handle of the brush allows for an optimal grip. This buffing brush works to enhance the REBOOT
         application experience: BUILD UP YOUR COVERAGE: For more coverage on specific areas, add some foundation and buff it onto your skin.
         * At MAKE UP FOR EVER</string>
+    <string name="required">Required</string>
+    <string-array name="cities">
+        <item>Riyadh</item>
+        <item>Jeddah</item>
+        <item>Dammam</item>
+    </string-array>
+    <string-array name="riyadh_streets">
+        <item>Olaya St</item>
+        <item>Musa Ibn Nusair st</item>
+    </string-array>
+    <string-array name="jeddah_streets">
+        <item>King Faisal Rd</item>
+        <item>King Khalid Rd</item>
+    </string-array>
+    <string-array name="dammam_streets">
+        <item>Abu Bakr Elsiddiq st</item>
+        <item>Imam Bukhari st</item>
+    </string-array>
+    <string name="title_activity_service_details">ServiceDetailsActivity</string>
+    <string name="order_number">Order Number</string>
+    <string name="order_date">Order Date</string>
+    <string name="appointment_date">Appointment Date</string>
+    <string name="time">Time</string>
+    <string name="amount">Amount</string>
+    <string name="no_beauticians">There is no beauticians</string>
+    <string name="send">Send</string>
+    <string name="information">Information</string>
+    <string name="services_provided">Services Provided</string>
+    <string name="reviews">Reviews</string>
+    <string name="booking_services">Booking Services</string>
+    <string name="booking_type">Booking Type</string>
+    <string name="booking_appointment">Booking Appointment</string>
+    <string name="edit_time">Edit Time</string>
+    <string name="note">Note:</string>
+    <string name="music">Music</string>
+    <string name="promotion_code">Promotion Code</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="credit_debit_card">Credit/Debit Card</string>
+    <string name="pay_cash">Pay Cash</string>
+
+    <string name="choose_branch">Choose Branch</string>
+    <string name="date">Date</string>
+    <string name="available_times">Available times</string>
+    <string name="next">Next</string>
+
+
+    <string name="notes">Notes</string>
+
+
+    <string name="hair_specialist">Hair Specialist</string>
+    <string name="message_girls">Message Girls</string>
+
+    <string name="choose_your_option">Choose your option</string>
+    <string name="individual_booking">Individual Booking</string>
+    <string name="group_booking">Group Booking</string>
+    <string name="invite_your_friends">Invite your friends</string>
+    <string name="write_phone_number">write phone number</string>
+    <string name="add_to_list">Add To List</string>
+    <string name="schedule_now">Schedule now</string>
+    <string name="select_friends">Select Friends</string>
+    <string name="done">Done</string>
+    <string name="contact_permission">You have to allow to read your contacts</string>
+    <string name="phone_added">This phone is already added</string>
+    <string name="permission_contacts">Read contacts permission is required to function app correctly</string>
+
+    <string name="confirm_payment">Confirm Payment</string>
+    <string name="payment_successful">Payment Successful</string>
+    <string name="thank_you">Thank you</string>
+
+
+    <string name="let_s_booking">Let\'s booking</string>
+    <string name="our_location">Our Location</string>
+
+    <string name="duration">Duration</string>
+    <string name="material_used">Material Used</string>
+
+    <string name="price">Price</string>
+    <string name="related_offers">Related Offers</string>
+    <string name="get_offer_now">Get Offer now</string>
+    <string name="there_is_no_offers">There is no Offers</string>
+    <string name="percent_off">% off</string>
+    <string name="money_off">SAR off</string>
+    <string name="enter_new_password">Please Enter new password</string>
+    <string name="enter_code">Enter the code sent to you</string>
+    <string name="confirmation_not_correct">Confirmation password is not correct</string>
+    <string name="please_enter_your_password">Please Enter your password</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="save">Save</string>
+
+
+    <string name="there_is_no_products_in_this_category">There is no products in this category</string>
+    <string name="there_is_no_product_categories">There is no product categories</string>
+    <string name="edit">Edit</string>
+    <string name="continue_word">Continue</string>
+
+
+
+    <string name="there_is_no_services">There is no services</string>
+    <string name="there_is_no_services_categories">There is no Services categories</string>
+    <string name="skip">Skip</string>
+    <string name="account_activated">Account Successfuly Activated</string>
+    <string name="code_not_correct">Activation code isn\'t correct</string>
+    <string name="verification">Verification</string>
+    <string name="a_4_digit_pin_has_been_sent_to_your_email_address_enter_it_below_to_continue">A 4 - Digit PIN has been sent to your email address, enter it below to continue</string>
+
+    <string name="resend_code">Resend Code</string>
+    <string name="not_signed">You aren\'t logged in</string>
+    <string name="there_is_no_services_in_cart">There is no services in Cart</string>
+    <string name="there_is_no_appointments">There is no appointments</string>
+    <string name="there_is_no_favourite_services">There is no favourite services</string>
 
 </resources>

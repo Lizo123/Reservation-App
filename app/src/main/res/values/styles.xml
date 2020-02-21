@@ -8,7 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="font">@font/sf_text</item>
         <item name="android:statusBarColor">@color/colorPrimaryDark</item>
-        <item name="android:textSize">@dimen/dimen_20</item>
+        <item name="android:textSize">@dimen/dimen_18</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -17,7 +17,12 @@
         <item name="font">@font/sf_text</item>
         <item name="android:textColor">@color/White</item>
         <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/dimen_18</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
         <item name="android:textSize">@dimen/dimen_20</item>
+
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

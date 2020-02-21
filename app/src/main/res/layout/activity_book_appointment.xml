@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/layout"
-    tools:context=".bookAppointment.BookAppointment">
+    tools:context=".view.bookAppointment.BookAppointment">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -26,8 +26,8 @@
                 android:id="@+id/cart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginRight="10dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
                 android:src="@drawable/ic_cart_white" />
 
             <TextView
@@ -46,7 +46,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:text="Choose your option"
+        android:text="@string/choose_your_option"
         android:textSize="@dimen/dimen_20"
         android:textColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Individual Booking"
+        android:text="@string/individual_booking"
 
         app:layout_constraintEnd_toEndOf="@+id/individual_booking"
         app:layout_constraintStart_toStartOf="@+id/individual_booking"
@@ -88,7 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Group Booking"
+        android:text="@string/group_booking"
 
         app:layout_constraintEnd_toEndOf="@+id/group_booking"
         app:layout_constraintStart_toStartOf="@+id/group_booking"
@@ -103,7 +103,7 @@
         android:layout_marginEnd="8dp"
         android:clickable="true"
         android:focusable="true"
-        android:text="Invite your friends"
+        android:text="@string/invite_your_friends"
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/dimen_20"
         app:layout_constraintEnd_toEndOf="parent"
@@ -119,7 +119,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:text="write phone number"
+        android:text="@string/write_phone_number"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -132,6 +132,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:inputType="phone"
+        android:maxLines="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/write_phone" />
@@ -147,7 +149,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Add To List"
+        android:text="@string/add_to_list"
         android:textColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phone_text" />
@@ -214,7 +216,7 @@
         android:padding="8dp"
         android:paddingLeft="@dimen/dimen_15"
         android:paddingRight="@dimen/dimen_15"
-        android:text="Schedule now"
+        android:text="@string/schedule_now"
         android:textColor="@color/White"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

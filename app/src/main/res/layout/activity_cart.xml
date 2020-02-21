@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".carts.CartActivity">
+    tools:context=".view.carts.CartActivity">
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
@@ -31,12 +31,22 @@
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 
+    <TextView
+        android:id="@+id/no_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/there_is_no_services_in_cart"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cart_recycler"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
     <android.support.v7.widget.RecyclerView
         android:id="@+id/cart_recycler"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/add_services"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,13 +55,14 @@
     </android.support.v7.widget.RecyclerView>
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/add_services"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginBottom="16dp"
         android:background="@color/colorPrimary"
         android:gravity="center"
         android:orientation="horizontal"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/booking_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -75,9 +86,10 @@
         android:id="@+id/booking_button"
         android:layout_width="200dp"
         android:layout_height="50dp"
+        android:visibility="gone"
         android:layout_marginBottom="24dp"
         android:background="@drawable/button_style"
-        android:text="Let's booking"
+        android:text="@string/let_s_booking"
         android:textColor="@color/White"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

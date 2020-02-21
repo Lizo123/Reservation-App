@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string name="app_name">The Spa</string>
+        <string name="the_spa">The Spa</string>
+        <string name="name">الاسم</string>
+        <string name="mobile_number"> رقم الهاتف المحمول</string>
+        <string name="orem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting">orem Ipsum is simply dummy text of the printing and typesetting</string>
+        <string name="title_activity_home">HomeActivity</string>
+        <string name="navigation_drawer_open">Open navigation drawer</string>
+        <string name="navigation_drawer_close">Close navigation drawer</string>
+        <string name="nav_header_title">Android Studio</string>
+        <string name="nav_header_subtitle">android.studio@android.com</string>
+        <string name="nav_header_desc">Navigation header</string>
+        <string name="action_settings">الإعدادات</string>
+
+        <string name="menu_home">   الصفحة الرئيسية</string>
+        <string name="menu_services">خدمات</string>
+        <string name="menu_products">منتجات</string>
+        <string name="menu_offers">عروض</string>
+        <string name="menu_beauticians">اخصائي التجميل</string>
+        <string name="menu_cart">  عربة التسوق</string>
+        <string name="menu_appointments">مواعيدي</string>
+        <string name="menu_Favorite">المفضل</string>
+        <string name="menu_about_us">معلومات عنا</string>
+        <string name="menu_contact_us">    تواصل معنا </string>
+        <string name="log_out">الخروج؟</string>
+        <string name="Duumy_mobile">+201016017696</string>
+        <string name="dummy_name">Zoha Haded</string>
+
+        <string name="see_more">شاهد المزيد</string>
+        <string name="add_more_services">أضف المزيد من الخدمات</string>
+        <string name="sign_up"> اشترك </string>
+        <string name="sign_in"> تسجيل الدخول</string>
+        <string name="image">image</string>
+        <string name="brushes">Brushes</string>
+        <string name="face_amp_skin"><![CDATA[Face & Skin]]></string>
+        <string name="details">تفاصيل</string>
+        <string name="book_appointment">    احجز ميعاد  </string>
+        <string name="product_description">THE IDEAL REBOOT FOUNDATION TOOL MAKE UP FOR EVER makeup artists
+        have designed a new* brush to apply REBOOT ACTIVE CARE-IN-FOUNDATION: Buffing Foundation Brush #112.
+        WHY WE LOVE IT The fibers and the density of the new Buffing Foundation Brush #112 have been designed to
+        allow both smoothing and dabbing motions. Its shape slightly beveled shape is also designed to follow the various
+        contours of the face. During application, the bristles stay in place and produce a pleasant sensation on the skin,
+        while the short, wide handle of the brush allows for an optimal grip. This buffing brush works to enhance the REBOOT
+        application experience: BUILD UP YOUR COVERAGE: For more coverage on specific areas, add some foundation and buff it onto your skin.
+        * At MAKE UP FOR EVER</string>
+        <string name="required">مطلوب </string>
+        <string-array name="cities">
+            <item>Riyadh</item>
+            <item>Jeddah</item>
+            <item>Dammam</item>
+        </string-array>
+        <string-array name="riyadh_streets">
+            <item>Olaya St</item>
+            <item>Musa Ibn Nusair st</item>
+        </string-array>
+        <string-array name="jeddah_streets">
+            <item>King Faisal Rd</item>
+            <item>King Khalid Rd</item>
+        </string-array>
+        <string-array name="dammam_streets">
+            <item>Abu Bakr Elsiddiq st</item>
+            <item>Imam Bukhari st</item>
+        </string-array>
+        <string name="title_activity_service_details">ServiceDetailsActivity</string>
+        <string name="order_number">رقم الطلب</string>
+        <string name="order_date"> تاريخ الطلب</string>
+        <string name="appointment_date">تاريخ الموعد</string>
+        <string name="time">الوقت </string>
+        <string name="amount">الكمية</string>
+        <string name="no_beauticians">لا يوجد مستحضرات التجميل</string>
+        <string name="send">إرسال</string>
+        <string name="information"> معلومات</string>
+        <string name="services_provided">تقديم خدمات</string>
+        <string name="reviews"> التعليقات</string>
+        <string name="booking_services">  خدمات الحجز</string>
+        <string name="booking_type">  نوع الحجز</string>
+        <string name="booking_appointment">موعد الحجز </string>
+        <string name="edit_time">تحرير الوقت</string>
+        <string name="note"> ملحوظة:</string>
+        <string name="music"> موسيقى</string>
+        <string name="promotion_code"> كود الترقية</string>
+        <string name="confirm_booking">    تأكيد الحجز</string>
+        <string name="payment_methods">  طرق الدفع</string>
+        <string name="credit_debit_card">   بطاقة الائتمان </string>
+        <string name="pay_cash">   الدفع نقدا</string>
+
+        <string name="choose_branch">اختر الفرع</string>
+        <string name="date">  التاريخ</string>
+        <string name="available_times">  الأوقات المتاحة</string>
+        <string name="next"> التالى</string>
+
+
+        <string name="notes">  ملاحظات</string>
+
+
+        <string name="hair_specialist">أخصائي الشعر</string>
+        <string name="message_girls">أرسل للبنات</string>
+
+        <string name="choose_your_option"> اختر خيارك</string>
+        <string name="individual_booking">   الحجز الفردي</string>
+        <string name="group_booking">الحجز لمجموعة </string>
+        <string name="invite_your_friends"> اعزم اصحابك</string>
+        <string name="write_phone_number"> اكتب رقم الهاتف</string>
+        <string name="add_to_list">    أضف إلى القائمة</string>
+        <string name="schedule_now"> احجز موعد الآن </string>
+        <string name="select_friends"> إختر أصدقاء</string>
+        <string name="done"> تم</string>
+        <string name="contact_permission">يجب أن تسمح بقراءة جهات الاتصال الخاصة بك</string>
+        <string name="phone_added"> تمت إضافة هذا الهاتف بالفعل</string>
+        <string name="permission_contacts">قراءة إذن جهات الاتصال مطلوب لتشغيل التطبيق بشكل صحيح</string>
+
+        <string name="confirm_payment">   تأكيد الدفع</string>
+        <string name="payment_successful">  تم   الدفع بنجاح </string>
+        <string name="thank_you"> شكرا </string>
+
+
+        <string name="let_s_booking">هيا نحجز</string>
+        <string name="our_location">    موقعنا</string>
+
+        <string name="duration">المدة الزمنية</string>
+        <string name="material_used"> المواد المستخدمة</string>
+
+        <string name="price"> السعر</string>
+        <string name="related_offers"> عروض ذات صلة</string>
+        <string name="get_offer_now"> احصل على العرض الآن</string>
+        <string name="there_is_no_offers">   لا يوجد عروض</string>
+        <string name="percent_off">% off</string>
+        <string name="money_off">SAR off</string>
+        <string name="enter_new_password"> الرجاء إدخال كلمة مرور جديدة</string>
+        <string name="enter_code">  أدخل الكود المرسل لك</string>
+        <string name="confirmation_not_correct">كلمة مرور التأكيد غير صحيحة</string>
+        <string name="please_enter_your_password">    من فضلك أدخل رقمك السري</string>
+        <string name="forget_password">    نسيت كلمة المرور؟</string>
+        <string name="confirm_password">   تأكيد كلمة المرور</string>
+        <string name="save"> حفظ</string>
+
+
+        <string name="there_is_no_products_in_this_category">   لا يوجد منتجات في هذه الفئة</string>
+        <string name="there_is_no_product_categories"> لا يوجد فئات المنتجات</string>
+        <string name="edit">  تعديل </string>
+        <string name="continue_word">استمر</string>
+
+
+
+        <string name="there_is_no_services"> لا توجد خدمات</string>
+        <string name="there_is_no_services_categories">لا توجد فئات للخدمات</string>
+        <string name="skip">تخطى</string>
+        <string name="account_activated">  تم تنشيط الحساب بنجاح</string>
+        <string name="code_not_correct">   رمز التفعيل غير صحيح</string>
+        <string name="verification">    التحقق</string>
+        <string name="a_4_digit_pin_has_been_sent_to_your_email_address_enter_it_below_to_continue">تم إرسال رمز PIN المكون من 4 أرقام إلى عنوان بريدك الإلكتروني ، أدخله بالاسفل للمتابعة</string>
+
+        <string name="resend_code">   أعد إرسال الرمز</string>
+        <string name="not_signed">انت غير مسجل</string>
+
+        <string name="there_is_no_services_in_cart">لا يوجد خدمات في عربه التسوق</string>
+
+</resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".bookAppointment.payment.PaymentMethods">
+    tools:context=".view.bookAppointment.payment.PaymentMethods">
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Payment Methods"
+                android:text="@string/payment_methods"
                 android:textColor="@color/White"
                 android:textSize="@dimen/dimen_text_17" />
         </android.support.v7.widget.Toolbar>
@@ -42,10 +42,10 @@
             android:id="@+id/card"
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:gravity="center"
             android:layout_marginBottom="20dp"
             android:background="@drawable/rounded_border_edittext"
-            android:text="Credit/Debit Card"
+            android:gravity="center"
+            android:text="@string/credit_debit_card"
             app:layout_constraintBottom_toTopOf="@+id/cash"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +56,7 @@
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:background="@drawable/rounded_border_edittext"
-            android:text="Pay Cash"
+            android:text="@string/pay_cash"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:layout_editor_absoluteX="105dp" />
     </LinearLayout>
@@ -65,7 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:gravity="center"
-        android:text="Continue"
+        android:text="@string/continue_word"
         android:textColor="@color/White"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

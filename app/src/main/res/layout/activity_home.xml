@@ -6,7 +6,7 @@
     <data>
         <variable
             name="activity"
-            type="com.example.thespa.home.HomeActivity" />
+            type="com.example.thespa.view.home.HomeActivity" />
     </data>
 
     <android.support.v4.widget.DrawerLayout
@@ -23,7 +23,7 @@
             <android.support.design.widget.CoordinatorLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:context=".home.HomeActivity">
+                tools:context=".view.home.HomeActivity">
 
                 <android.support.design.widget.AppBarLayout
                     android:layout_width="match_parent"
@@ -46,7 +46,7 @@
                     </android.support.v7.widget.Toolbar>
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="10dp"
@@ -81,7 +81,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="400dp"
-                    android:text="@string/services"
+                    android:text="@string/menu_services"
                     android:fontFamily="@font/sf_text"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
@@ -99,117 +99,25 @@
                     android:text="@string/see_more"
                     android:layout_marginEnd="20dp"
                     android:layout_marginStart="20dp"/>
-
-                <GridLayout
-                    android:layout_width="match_parent"
+                <ProgressBar
+                    android:id="@+id/services_progress"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="430dp"
-                    android:columnCount="2"
-                    android:rowCount="2">
+                    android:layout_marginTop="450dp"
+                    android:layout_gravity="center"
+                    />
+              <android.support.v7.widget.RecyclerView
+                  android:id="@+id/services_recycler"
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:layout_rowWeight="1"
-                        android:layout_columnWeight="1"
-                        android:layout_margin="10dp"
-                        android:background="@drawable/card_design"
-                        android:elevation="3dp"
-                        android:orientation="vertical"
-                        android:paddingTop="20dp">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:src="@drawable/relax"
-                            android:contentDescription="relax" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="@string/face_amp_skin" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:layout_rowWeight="1"
-                        android:layout_columnWeight="1"
-                        android:layout_margin="10dp"
-                        android:background="@drawable/card_design"
-                        android:elevation="3dp"
-                        android:orientation="vertical"
-                        android:paddingTop="20dp">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:src="@drawable/relax" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="Face &amp; Skin" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:layout_rowWeight="1"
-                        android:layout_columnWeight="1"
-                        android:layout_margin="10dp"
-                        android:background="@drawable/card_design"
-                        android:elevation="3dp"
-                        android:orientation="vertical"
-                        android:paddingTop="20dp">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:src="@drawable/relax" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="@string/face_amp_skin" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:layout_rowWeight="1"
-                        android:layout_columnWeight="1"
-                        android:layout_margin="10dp"
-                        android:background="@drawable/card_design"
-                        android:elevation="3dp"
-                        android:orientation="vertical"
-                        android:paddingTop="20dp">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:src="@drawable/relax" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:text="@string/face_amp_skin" />
-                    </LinearLayout>
-                </GridLayout>
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="430dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="700dp"
-                    android:text="@string/products"
+                    android:layout_marginTop="730dp"
+                    android:text="@string/menu_products"
                     android:fontFamily="@font/sf_text"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold"
@@ -221,66 +129,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
-                    android:layout_marginTop="700dp"
+                    android:layout_marginTop="730dp"
                     android:text="@string/see_more"
                     android:layout_marginEnd="20dp"
+                    android:onClick="@{()->activity.StartProducts()}"
                     android:layout_marginStart="20dp"/>
-
-                <GridLayout
-                    android:layout_width="match_parent"
+                <ProgressBar
+                    android:id="@+id/products_progress"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="720dp"
-                    android:columnCount="2"
-                    android:rowCount="2">
+                    android:layout_gravity="center"
+                    android:layout_marginTop="750dp"/>
+              <android.support.v7.widget.RecyclerView
+                  android:id="@+id/products_recycler"
+                  android:visibility="gone"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="740dp"
+                  android:layout_marginBottom="10dp"/>
 
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:layout_rowWeight="1"
-                        android:layout_columnWeight="1"
-                        android:layout_margin="10dp"
-                        android:elevation="3dp"
-                        android:src="@drawable/product_1"
-                        />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:layout_rowWeight="1"
-                        android:layout_columnWeight="1"
-                        android:layout_margin="10dp"
-                        android:elevation="3dp"
-
-                        android:orientation="vertical"
-
-                        android:src="@drawable/product_1" />
-
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:layout_rowWeight="1"
-                        android:layout_columnWeight="1"
-                        android:layout_margin="10dp"
-                        android:elevation="3dp"
-
-                        android:orientation="vertical"
-
-                        android:src="@drawable/product_1" />
-
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="100dp"
-                        android:layout_rowWeight="1"
-                        android:layout_columnWeight="1"
-                        android:layout_margin="10dp"
-                        android:elevation="3dp"
-                        android:orientation="vertical"
-                        android:src="@drawable/product_1" />
-
-                </GridLayout>
             </android.support.design.widget.CoordinatorLayout>
         </ScrollView>
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".appointments.AppointmentsActivity">
+    tools:context=".view.appointments.AppointmentsActivity">
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
@@ -36,9 +36,9 @@
         android:background="@color/gray"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,7 +50,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/tab_style"
         app:tabMode="fixed"
-        app:tabGravity="fill" />
+        app:tabGravity="fill"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"/>
     </android.support.v4.view.ViewPager>
 
 </android.support.constraint.ConstraintLayout>

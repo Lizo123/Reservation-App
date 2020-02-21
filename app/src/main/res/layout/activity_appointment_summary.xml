@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".bookAppointment.appointment_summary.AppointmentSummaryActivity">
+    tools:context=".view.bookAppointment.appointment_summary.AppointmentSummaryActivity">
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
@@ -49,9 +49,13 @@
                 android:id="@+id/editText6"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="12dp"
                 android:background="@drawable/promotion_edittext_style"
+                android:maxLines="1"
+                android:inputType="text"
+                android:padding="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView76" />
 
@@ -66,7 +70,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/title" />
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/favorite"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
 
@@ -108,7 +112,7 @@
                 app:layout_constraintTop_toTopOf="@+id/textView75" />
 
             <LinearLayout
-                android:id="@+id/linearLayout2"
+                android:id="@+id/add_services"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="24dp"
@@ -247,7 +251,7 @@
                 android:text="75 min"
                 android:textSize="@dimen/dimen_15"
                 app:layout_constraintBottom_toBottomOf="@+id/image"
-                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintStart_toEndOf="@+id/favorite"
                 app:layout_constraintTop_toBottomOf="@+id/title" />
 
             <TextView
@@ -272,7 +276,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
-                android:text="Booking Services"
+                android:text="@string/booking_services"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/dimen_28"
 
@@ -298,12 +302,12 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:text="Booking Type"
+                android:text="@string/booking_type"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/dimen_28"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+                app:layout_constraintTop_toBottomOf="@+id/add_services" />
 
             <TextView
                 android:id="@+id/textView66"
@@ -346,7 +350,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
-                android:text="Booking Appointment"
+                android:text="@string/booking_appointment"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/dimen_28"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -394,7 +398,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:gravity="center"
-                android:text="Edit Time"
+                android:text="@string/edit_time"
                 android:textColor="@color/colorPrimary"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -406,7 +410,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Note:"
+                android:text="@string/note"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/dimen_20"
                 app:layout_constraintStart_toStartOf="parent"
@@ -431,7 +435,7 @@ printing and typesetting. "
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="Music"
+                android:text="@string/music"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/dimen_28"
                 app:layout_constraintStart_toStartOf="parent"
@@ -452,7 +456,7 @@ printing and typesetting. "
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Promotion Code"
+                android:text="@string/promotion_code"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView75" />
@@ -476,7 +480,7 @@ printing and typesetting. "
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:gravity="center"
-        android:text="Confirm Booking"
+        android:text="@string/confirm_booking"
         android:textColor="@color/White"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
